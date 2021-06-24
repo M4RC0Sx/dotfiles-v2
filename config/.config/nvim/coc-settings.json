@@ -1,0 +1,16 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "python",
+        "javascript",
+        "html",
+        "yaml",
+        "json"
+    ],
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/utils/snips"
+    ],
+    "explorer.icon.enableVimDevicons": true
+}
