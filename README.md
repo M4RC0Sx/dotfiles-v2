@@ -18,6 +18,7 @@ My new setup dotfiles for Artix Linux.
 * **Dotfiles Manager:** [GNU Stow](https://www.gnu.org/software/stow/)
 * **Text Editor #1:** [Neovim](https://neovim.io/)
 * **Text Editor #2:** [Visual Studio Code](https://code.visualstudio.com/)
+* **Screenshots:** gnome-screenshot
 
 
 ## Installation
@@ -53,6 +54,11 @@ My new setup dotfiles for Artix Linux.
 - **battery-monitor.sh:** Meant to be run on crontab every 1 minute. It controls de battery status and sends dunst notifications if it is low.
 
 - **feh-bg.sh:** Simple script to set desktop wallpaper at startup with feh. It gets executed when bspwm starts (*bspwmrc*). 
+
+
+## Custom bin Programs List (~/.local/bin):
+- **instant-screenshot:** Takes an instant screenshot of the entire screen, saving it into `~/Images/Screenshot`, with a name based on the date.
+- **interactive-screenshot:** Launches gnome-screenshot GUI.
 
 ## TODO List
 - [x] Manage dotfiles via stow.
