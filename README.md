@@ -60,12 +60,13 @@ My new setup dotfiles for Artix Linux.
 - [ ] Add packages list to the repository.
 - [ ] Configure polybar.
 - [ ] Make a monitor switching script.
-- [ ] Make a screnshot system script.
+- [x] Make a screnshot system script.
 - [ ] More customization on kitty and its keybindings.
 - [ ] Remove all `/home/marcos/`.
 - [ ] Add X11 files to dotfiles via stow.
 - [ ] Add crontab files to dotfiles via stow.
-
+- [ ] Add `/etc/profile.d/jre.sh` to dotfiles.
+- [ ] Add IntellijIDEA settings to dotfiles.
 
 ## Credits
 - [Luke Smith](https://lukesmith.xyz/) - I knew about Artix because of one of his videos.
