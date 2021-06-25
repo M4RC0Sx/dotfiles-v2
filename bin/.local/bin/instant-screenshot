@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DATE=$(date '+%Y-%m-%d_%H:%M:%S')
+FILENAME="Screenshot_$DATE.png"
+
+gnome-screenshot -f "$HOME"/Images/Screenshot/"$FILENAME"
