@@ -35,6 +35,9 @@ fi
 # Keyboard layout - US with dead keys
 setxkbmap -layout us -variant intl
 
+# Java applications resizing fix
+export AWT_TOOLKIT=MToolkit
+
 # Init bspwm
 sxhkd &
 exec bspwm

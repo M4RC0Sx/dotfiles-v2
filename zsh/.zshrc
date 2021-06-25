@@ -61,6 +61,9 @@ alias cat='bat'
 
 # kitty-friendly ssh
 alias ssh="kitty +kitten ssh"
+
+# dotfiles
+alias dotfiles="cd $HOME/dotfiles-v2 ; nvim $HOME/dotfiles-v2"
 ###############
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -73,6 +76,8 @@ source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 # Exports
 export EDITOR=nvim
 
+# Java fix
+export _JAVA_AWT_WM_NONREPARTENTING=1
 
 function man() {
     env \
