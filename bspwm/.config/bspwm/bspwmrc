@@ -12,7 +12,7 @@ wmname LG3D &
 $HOME/.config/polybar/launch.sh
 
 # NewtworkManager-Applet
-nm-applet &
+#nm-applet &
 
 # Desktop wallpaper
 feh --bg-fill $HOME/Images/Wallpaper/wp_1.png
