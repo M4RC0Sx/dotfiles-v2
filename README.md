@@ -52,7 +52,6 @@ My new setup dotfiles for Artix Linux.
 
 ## Scripts List
 - **battery-monitor.sh:** Meant to be run on crontab every 1 minute. It controls de battery status and sends dunst notifications if it is low.
-
 - **feh-bg.sh:** Simple script to set desktop wallpaper at startup with feh. It gets executed when bspwm starts (*bspwmrc*). 
 
 
@@ -70,9 +69,9 @@ My new setup dotfiles for Artix Linux.
 - [x] Make a screnshot system script.
 - [ ] More customization on kitty and its keybindings.
 - [ ] Remove all `/home/marcos/`.
-- [ ] Add X11 files to dotfiles via stow.
-- [ ] Add crontab files to dotfiles via stow.
-- [ ] Add `/etc/profile.d/jre.sh` to dotfiles.
+- [x] Add X11 files to dotfiles.
+- [ ] Add crontab files to dotfiles.
+- [x] Add `/etc/profile.d/jre.sh` to dotfiles.
 - [ ] Add IntellijIDEA settings to dotfiles.
 
 ## Credits
