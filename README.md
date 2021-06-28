@@ -69,10 +69,11 @@ My new setup dotfiles for Artix Linux.
 - [x] Make a screnshot system script.
 - [ ] More customization on kitty and its keybindings.
 - [ ] Remove all `/home/marcos/`.
-- [x] Add X11 files to dotfiles.
-- [ ] Add crontab files to dotfiles.
-- [x] Add `/etc/profile.d/jre.sh` to dotfiles.
-- [ ] Add IntellijIDEA settings to dotfiles.
+- [x] Add X11 files.
+- [ ] Add crontab files.
+- [x] Add `/etc/profile.d/jre.sh`.
+- [ ] Add IntellijIDEA settings.
+- [x] Add wallpapers.
 
 ## Credits
 - [Luke Smith](https://lukesmith.xyz/) - I knew about Artix because of one of his videos.

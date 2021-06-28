@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create needed directories.
+mkdir -p ~/Images
+
 # Generate stow symlinks.
 for file in *; do
     if [ -d "$file" ] && [[ "$file" != _* ]]; then
@@ -7,6 +10,9 @@ for file in *; do
         stow "$file"
     fi
 done
+
+# Create screenshots directory.
+mkdir -p ~/Images/Screenshot
 
 # Generate X11 symlinks - sudo needed.
 sudo mkdir -p /etc/X11/xorg.conf.d
