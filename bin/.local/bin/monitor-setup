@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sleep 2
+# bspc wm -r
+notify-send "Monitor setup changed!"
+~/.config/bspwm/multimonitor-setup
+~/.config/polybar/launch.sh
