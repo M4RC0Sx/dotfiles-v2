@@ -64,7 +64,7 @@ My new setup dotfiles for Artix Linux.
 - [x] Manage dotfiles via stow.
 - [ ] Add VSCode extensions list to the repository.
 - [ ] Add packages list to the repository.
-- [ ] Configure polybar.
+- [x] Configure polybar.
 - [x] Make a monitor switching script.
 - [x] Make a screnshot system script.
 - [ ] More customization on kitty and its keybindings.
@@ -80,3 +80,5 @@ My new setup dotfiles for Artix Linux.
 - [S4vitar](https://s4vitar.github.io/bspwm-configuration-files/#/) - Some useful zsh scripts and settings, compton and bspwm aspects.
 
 - [Antonio Sarosi](https://github.com/antoniosarosi/dotfiles) - All Neovim config and plugins based on his setup.
+
+- [mklan](https://github.com/mklan) - Some polybar stuff and useful scripts.

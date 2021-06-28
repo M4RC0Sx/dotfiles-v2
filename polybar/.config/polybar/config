@@ -1,0 +1,214 @@
+[colors]
+background = ${colors.color7:#AA000000}
+background-alt = #444
+foreground = ${xrdb:color7:#FFF}
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+[bar/bar]
+monitor = ${env:MONITOR:eDP1}
+width = 100%
+height = 27
+radius = 0
+bottom = true
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 0
+line-color = #f00
+border-size = 0
+border-color = #00000000
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = "Wuncon Siji:pixelsize=10;1"
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
+modules-left = bspwm ip github
+modules-center = clock date calendar
+modules-right = pulseaudio backlight temperature memory cpu battery logout
+tray-position = right
+tray-padding = 4
+tray-background = ${colors.background}
+tray-detached = false
+wm-restack = bspwm
+override-redirect = false
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = false
+ws-icon-0 = 1;1
+ws-icon-1 = 2; 2
+ws-icon-2 = 3; 3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7; 7
+ws-icon-7 = 8; 8
+ws-icon-8 = 9; 9
+ws-icon-9 = 10; 10
+format = " <label-monitor>  <label-state>  "
+label-monitor = %name%
+label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+label-occupied = %name%
+label-occupied-padding = 2
+label-urgent = %name%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+[module/ip]
+type = custom/script
+exec = $HOME/.config/polybar/ip.sh
+interval = 3
+
+[module/github]
+type = custom/script
+exec = $HOME/.config/polybar/github.sh
+interval = 3
+
+[module/backlight]
+type = internal/backlight
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+format = <label> <bar>
+label = 
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #ff
+bar-indicator-font = 2
+bar-fill = _
+bar-fill-font = 2
+bar-fill-foreground = ${colors.foreground}
+bar-empty = _
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+format-underline = #f90000
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+;format-underline = #4bffdc
+label = %gb_used%
+
+[module/clock]
+type = internal/date
+interval = 5
+time = %H:%M
+label = " %time%"
+
+[module/date]
+type = internal/date
+interval = 60
+enable-click = true
+date = "%d/%m/%y"
+label = "%date% "
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.usb-ESI_Audiotechnik_GmbH_Dr._DAC_nano-01.analog-stereo
+#sink = alsa_output.usb-SMSL_Inc._SMSL_iDol_DAC-00.analog-stereo
+format-volume = <label-volume> <bar-volume>
+label-volume = ""
+label-volume-foreground = ${root.foreground}
+format-muted-prefix = " "
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = _________
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.foreground}
+bar-volume-foreground-1 = ${colors.foreground}
+bar-volume-foreground-2 = ${colors.foreground}
+bar-volume-foreground-3 = ${colors.foreground}
+bar-volume-foreground-4 = ${colors.foreground}
+bar-volume-foreground-5 = ${colors.foreground}
+bar-volume-foreground-6 = ${colors.foreground}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = _
+bar-volume-fill-font = 2
+bar-volume-empty = _
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+time-format = %H:%M
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = #ffb52a
+label-discharging = %percentage%% (%time%)
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+format-full-prefix = " "
+format-full-underline = ${self.format-charging-underline}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+; Default: 5
+poll-interval = 5
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+format = <ramp> <label>
+;format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+;format-warn-underline = ${self.format-underline}
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.secondary}
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground}
+
+[settings]
+pseudo-transparency = true
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
