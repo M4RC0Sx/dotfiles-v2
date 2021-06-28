@@ -59,6 +59,7 @@ My new setup dotfiles for Artix Linux.
 ## Custom bin Programs List (~/.local/bin):
 - **instant-screenshot:** Takes an instant screenshot of the entire screen, saving it into `~/Images/Screenshot`, with a name based on the date.
 - **interactive-screenshot:** Launches gnome-screenshot GUI.
+- **monitor-setup:** Setup polybar and bspwm for your currently connected monitors.
 
 ## TODO List
 - [x] Manage dotfiles via stow.
