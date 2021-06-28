@@ -40,6 +40,10 @@ Print
 ctrl + Print
 	interactive-screenshot
 
+# Monitor setup
+super + p
+	monitor-setup
+
 # Lock screen
 super + x
 	GLITCHICON=/opt/glitchlock/stop.png /opt/glitchlock/glitchlock	
@@ -93,8 +97,8 @@ super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+# super + {p,b,comma,period}
+#	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
