@@ -74,6 +74,7 @@ My new setup dotfiles for Artix Linux.
 - [x] Add `/etc/profile.d/jre.sh`.
 - [ ] Add IntellijIDEA settings.
 - [x] Add wallpapers.
+- [ ] Make a random wallpaper script.
 
 ## Credits
 - [Luke Smith](https://lukesmith.xyz/) - I knew about Artix because of one of his videos.
