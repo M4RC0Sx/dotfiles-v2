@@ -75,6 +75,7 @@ My new setup dotfiles for Artix Linux.
 - [ ] Add IntellijIDEA settings.
 - [x] Add wallpapers.
 - [ ] Make a random wallpaper script.
+- [ ] Add images to readme.
 
 ## Credits
 - [Luke Smith](https://lukesmith.xyz/) - I knew about Artix because of one of his videos.
