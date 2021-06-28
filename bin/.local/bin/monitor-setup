@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#if [ "$(autorandr --current)" == "mobile" ]; then
+#    autorandr --change dual-right
+#else
+#    autorandr --change mobile
+#fi
+
 sleep 2
 # bspc wm -r
 notify-send "Monitor setup changed!"

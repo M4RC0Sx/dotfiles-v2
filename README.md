@@ -1,6 +1,8 @@
 # Dotfile v2.0 - M4RC0Sx
 My new setup dotfiles for Artix Linux.
 
+![preview](./.img/preview.png "M4RC0Sx dotfiles preview")
+
 ## System Features
 * **OS:** [Artix Linux (x86_64)](https://artixlinux.org/)
 * **Display Server:** Xorg
@@ -75,7 +77,7 @@ My new setup dotfiles for Artix Linux.
 - [ ] Add IntellijIDEA settings.
 - [x] Add wallpapers.
 - [ ] Make a random wallpaper script.
-- [ ] Add images to readme.
+- [x] Add images to readme.
 
 ## Credits
 - [Luke Smith](https://lukesmith.xyz/) - I knew about Artix because of one of his videos.
