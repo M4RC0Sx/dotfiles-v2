@@ -65,7 +65,7 @@ My new setup dotfiles for Artix Linux.
 - [ ] Add VSCode extensions list to the repository.
 - [ ] Add packages list to the repository.
 - [ ] Configure polybar.
-- [ ] Make a monitor switching script.
+- [x] Make a monitor switching script.
 - [x] Make a screnshot system script.
 - [ ] More customization on kitty and its keybindings.
 - [ ] Remove all `/home/marcos/`.
