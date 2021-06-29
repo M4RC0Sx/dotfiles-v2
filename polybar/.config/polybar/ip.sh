@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ethernet & WiFi
-E=$(ip addr show dev enp0s20f0u3u1 | wc -l)
+E=$(ip addr show dev enp0s20f0u3u1 2>/dev/null | wc -l)
 W=$(ip addr show dev wlp2s0 | wc -l)
 
 if [[ "$E" -gt 2 && "$W" -lt 2 ]]; then
