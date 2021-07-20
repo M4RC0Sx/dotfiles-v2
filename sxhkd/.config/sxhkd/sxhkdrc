@@ -12,7 +12,7 @@ super + d
 
 # Rofi SSH
 super + shift + d
-	rofi -hide-scrollbar -show ssh
+	rofi -hide-scrollbar -show ssh --ssh-command kitty +kitten ssh {host}
 
 # Relod sxhkd
 super + Escape
