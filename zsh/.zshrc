@@ -69,9 +69,10 @@ alias dotfiles="cd $HOME/dotfiles-v2 ; nvim $HOME/dotfiles-v2"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
+source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/plugins/zsh-sudo/sudo.plugin.zsh
+source $HOME/.zsh/plugins/git-flow-completion/git-flow-completion.zsh
 
 # Exports
 export EDITOR=nvim
